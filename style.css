@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background:yellow;
+}
+
+#game{
+    min-width: 2px;
+    max-width: 500px;
+    height: 200px;
+    border: 2px solid white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    background: black;
+}
+
+#character{
+    width:20px;
+    height: 50px;
+    background-color: cyan;
+    position: relative;
+    top: 150px;
+}
+
+.animate{
+        animation: jump 500ms infinite;
+    }    
+    
+
+@keyframes jump{
+    0%{top:150px}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    position: relative;
+    top: 130px;
+    left: 430px;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0%{left:480px;}
+    100%{left:-40px;}
+}
+
+.word{
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 50px;
+}
+
+.click{
+    color: red;
+    font-size: large;
+    font-weight: bolder;
+    padding: 70px;
+    margin-left: 50%;
+}
